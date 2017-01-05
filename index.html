@@ -11,44 +11,7 @@
 
 	<title>Artisanal Hand-Generated Marketing Headlines</title>
 
-	<style>
-		html {
-			height: 100%;
-		}
-		body {
-			background: #ababab url(papers-tim-gouw.jpg) no-repeat fixed center;
-			color: white;
-			font-family: sans-serif;	
-		}
-		a {
-			color: rgba(250,250,250,0.95);
-			text-decoration: none;
-		}
-		a:hover {
-			color: white;
-		}
-		a:visited {
-			color: white;
-		}
-		.generated-text {
-
-			text-align: center;
-			margin-top: 45vh;
-			text-shadow: 1px 1px 3px rgba(52,74,217,0.85);
-		}
-		.credits {
-			font-size: .7rem;
-			position: absolute;
-			bottom: 4px;
-			left: 12px;
-		}
-		.photo-credits {
-			font-size: .7rem;
-			position: absolute;
-			bottom: 4px;
-			right: 15px;
-		}
-	</style>
+	<link rel="stylesheet" type="text/css" href="style.css"/>
 </head>
 <body>
 	<div class="generated-text">
@@ -64,20 +27,6 @@
 		<p><sub><a href="https://unsplash.com/@punttim" target="_blank">Photo by Tim Gouw</a></sub></p>
 	</div>
 
-	<script>
-		function generateHeadline() {
-			var number = Math.floor(Math.random() * 27) + 3;
-			var adjectives = ["", "Advanced", "Amazing", "Astonishing", "Best", "Bold", "Breakthrough", "Bright", "Brilliant", "Crazy", "Clever", "Creative", "Crucial", "Digital Marketing", "Effective", "Epic", "Essential", "Fast", "Foolproof", "Free", "Fresh", "Fun", "Genius", "Important", "Incredible", "Indispensable", "Ingenious", "Inspired", "Inspiring", "Key", "Killer", "Memorable", "Moral, Ethical, & Perfectly Legal", "Must-Know", "Need-to-Know", "New", "Notable", "Powerful", "Pro", "Professional", "Proven", "Quick", "Shocking", "Simple", "Smart", "Strategic", "Stunning", "Successful", "Surprising", "Top", "Unconventional", "Unexpected", "Unique", "Unusual"];
-			var adjective = adjectives[Math.floor(Math.random() * adjectives.length)];
-			var noun1s = ["Facts", "Ideas", "Methods", "Principles", "Hints", "Ideas", "Inside Secrets", "Quick Fixes", "Resources", "Rules", "Solutions", "Steps", "Strategies", "Suggestions", "Tips", "Tools", "Trends", "Tricks", "Ways"];
-			var noun1 = noun1s[Math.floor(Math.random() * noun1s.length)];
-			var verbs = ["Accelerate", "Advance", "Amplify", "Boost", "Develop", "Double", "Enhance", "Expand", "Fire Up", "Grow", "Improve", "Increase", "Leverage", "Magnify", "Maximize", "Overhaul", "Prepare", "Raise", "Reboot", "Revamp"," Revitalize", "Refresh", "Rev Up", "Transform", "Triple", "Quadruple", "Skyrocket", "Spruce Up", "Stimulate", "Strengthen", "Supercharge", "Supplement", "Update", "Upgrade"];
-			var verb = verbs[Math.floor(Math.random() * verbs.length)];
-			var noun2s = ["Audience Engagement", "Blog Posts", "Brand Awareness", "Brand Recognition", "Business Strategy", "Content Marketing", "Content Marketing Strategy", "Content Reach", "Conversion Rate", "Customer Referrals", "Customer Reviews", "Email Engagement", "Email Open Rate", "Facebook Audience", "Follower Count", "Newsletter Subscriptions", "Lead Generation", "LinkedIn Network", "Online Sales", "Professional Network", "Referral Rate", "Revenue Stream", "ROI", "Sales Volume", "Search Traffic", "Social Media Impact", "Social Media Marketing", "Twitter Following", "Value Proposition", "Website Traffic"];
-			var noun2 = noun2s[Math.floor(Math.random() * noun2s.length)];
-
-			document.getElementById("headline").innerHTML = number + " " + adjective + " " + noun1 + " To " + verb + " Your " + noun2;
-		}
-	</script>
+	<script src="headline-generator.js"></script>
 </body>
 </html>

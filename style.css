@@ -1,0 +1,65 @@
+html {
+	height: 100%;
+}
+body {
+	background: #ababab url(papers-tim-gouw.jpg) no-repeat fixed center;
+	color: white;
+	font-family: sans-serif;	
+}
+a {
+	color: rgba(250,250,250,0.95);
+	text-decoration: none;
+}
+a:hover {
+	color: white;
+}
+a:visited {
+	color: white;
+}
+
+/* Extra small devices (phones, less than 768px) */
+.generated-text {
+	text-align: center;
+	margin-right: auto;
+	margin-left: auto;
+	text-shadow: 1px 1px 3px rgba(52,74,217,0.85);
+	margin-top: 35vh;
+	font-size: 1rem;
+}
+
+@media (min-width: 350px) {
+	.generated-text {
+		margin-top: 35vh;
+		font-size: 1.2rem;
+	}
+}
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+	.generated-text {
+		margin-top: 42vh;
+		max-width: 80%;
+		font-size: 1.25rem;
+	}
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+	.generated-text {
+		margin-top: 42vh;
+		max-width: 80%;
+		font-size: 1.4rem;
+	}
+}
+
+.credits {
+	font-size: .7rem;
+	position: absolute;
+	bottom: 4px;
+	left: 12px;
+}
+.photo-credits {
+	font-size: .7rem;
+	position: absolute;
+	bottom: 4px;
+	right: 15px;
+}
